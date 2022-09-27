@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.19/dist/css/uikit.min.css" />
+    <script src="https://kit.fontawesome.com/33e495fb35.js" crossorigin="anonymous"></script>
+    <link rel = "stylesheet" href = "style.css">
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-dark" style = "height: 100px">
+        <div class="container-fluid">
+          <h2  style = "color: white">My Store</h2>
+          <div class="search-bar">
+            <input class="search" id="search_items" placeholder="Search for products..." data-reactid="904" style="font-size: 25px; height:40px; border-radius: 12px;" onfocusin="showList()" onfocusout="hideList()">
+            <button id="search_btn" style="background-color: #0d6efd; border-color: #0d6efd; border-radius: 12px; height: 40px;"><i  class="fa fa-search" style="font-size: 25px;"></i></button>
+          </div>
+          <div class="search-auto">
+          <ul class="autocomplete-list" id="list">  
+          </ul>
+        </div>
+          <a href="#cart"><i class="fas fa-cart-arrow-down"></i></a>
+        </div>
+      </nav>
+      
+      <div class = "container">
+        <div class="rightBox">
+          <div class="profile mx-2" id="profile" onmouseover="mouseOv()" onmouseout="mouseOu()"><a>Profile</a></div>
+          <div class="wishlist mx-2" id="wish" onmouseover="mouseOver()" onmouseout="mouseOut()"><a>Wishlist</a></div>
+          <div class="bag mx-2" id="bag" onmouseover="mouseO()" onmouseout="mouseOt()"><a>Bag</a ></div>
+        </div>
+          <div class = "row" id="prodsec" style="padding:3% 3%;">
+              
+            
+            <h2>Loading Products . . . .</h2> 
+
+          </div>
+      </div>
+
+      <div class="uk-overflow-auto container" style = "width: 87%">
+        <table id="cart" class="uk-table uk-table-hover uk-table-middle uk-table-divider">
+            <thead>
+                <tr>
+                    <h1>Your Cart</h1>
+                    <th class="uk-table-shrink"></th>
+                    <th class="uk-table-small sty"><h3>ITEM</h3></th>
+                    <th class="uk-table-small"></th>
+                    <th class="uk-width-small sty"><h3>PRICE</h3></th>
+                    <th class="uk-table-shrink uk-text-small sty"><h3>QUANTITY</h3></th>
+                    <th class="uk-table-shrink uk-text-small sty"><h3>TOTAL</h3></th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    
+                </tr>
+          
+
+            </tbody>
+            <tr>
+              <td><input class="uk-checkbox" type="checkbox"></td>
+              <td><img class="uk-preserve-width uk-border-circle"  width="40" alt=""></td>
+              <td class="uk-table-link">
+                  <h3 class = "item-name"><strong>Grand-Total</strong></h3>
+              </td>
+              <td class="uk-text-truncate"><h3></h3></td>
+              <td class="uk-text-truncate"><h3></h3></td>
+              <td class="uk-text-truncate grand-total"><h3><strong>$0</strong></h3></td>
+              
+          </tr>
+        </table>
+
+        <div id="root">
+
+        </div>
+    </div>
+
+      <script src = "script.js"></script>
+      <script src = "script2.js"></script>
+</body>
+</html>

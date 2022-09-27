@@ -1,0 +1,88 @@
+body {
+	background-color: white;
+}
+.container {
+	margin: auto;
+	margin-top: 20px;
+	border: 3px solid #9eb5e0;
+	background-color: #eef1ff;
+	border-radius: 12px;
+}
+.col-md-,
+.col-lg-4 {
+	margin-bottom: 20px;
+}
+
+.rightBox {
+	display: flex;
+	flex-direction: row;
+	color: black;
+	text-align: center;
+	font-size: 2em;
+	padding-left: 32%;
+}
+
+a {
+	padding-right: 40px;
+}
+.search-bar {
+	padding-left: 60%;
+}
+.autocomplete-list {
+	color: rgb(10, 8, 8);
+	position: absolute;
+	top: 70px;
+	left: 70%;
+	list-style-type: none;
+	padding: 0;
+	background-color: white;
+	border: 2px solid black;
+	border-radius: 12px;
+	width: 18.5%;
+
+	font-weight: bold;
+	cursor: pointer;
+	z-index: 2;
+	overflow-y: auto;
+	max-height: 200px;
+	padding: 11px;
+}
+
+.sty {
+	font-size: 18px !important;
+	color: rgb(11, 5, 98) !important;
+}
+.num {
+	width: 80px;
+	height: 30px;
+	border: 3px solid rgb(0, 0, 0);
+	border-radius: 5px;
+	font-size: 18px;
+	padding: 5px;
+}
+.uk-border-circle {
+	width: 100px !important;
+	height: 100px !important;
+}
+.fa-cart-arrow-down {
+	color: white;
+	font-size: 50px;
+	cursor: pointer;
+	padding-left: 20px;
+}
+
+.item-name {
+	padding-left: 20px;
+}
+
+.uk-overflow-auto container {
+	padding-bottom: 50px;
+}
+
+h1 {
+	display: flex;
+	align-self: center;
+	text-align: center;
+	padding-left: 42%;
+	text-decoration: underline;
+}
